@@ -110,7 +110,7 @@ public class DlgUnosFilmova extends JDialog {
 						String opis = textAreaOpis.getText();
 						
 						if (naziv.equals("") || godina.equals("") || opis.equals("")) {
-							JOptionPane.showMessageDialog(null, "Sva polja moraju biti popunjena","Greška",JOptionPane.WARNING_MESSAGE);
+							JOptionPane.showMessageDialog(null, "Sva polja moraju biti popunjena","Greï¿½ka",JOptionPane.WARNING_MESSAGE);
 							return;
 						}
 						
@@ -138,11 +138,14 @@ public class DlgUnosFilmova extends JDialog {
 											
 							} catch(Exception ex) {
 							  JOptionPane.showMessageDialog(null, 
-				   ex.getMessage(),"Greška", JOptionPane.ERROR_MESSAGE);
+				   ex.getMessage(),"Greï¿½ka", JOptionPane.ERROR_MESSAGE);
 							}
 
 					}
 				});
+				
+				JButton btnNewButton = new JButton("New button");
+				buttonPane.add(btnNewButton);
 				okButton.setActionCommand("OK");
 				buttonPane.add(okButton);
 				getRootPane().setDefaultButton(okButton);
